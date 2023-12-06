@@ -205,5 +205,6 @@ return {
     tab_bar = scheme.tab_bar,
     visual_bell = scheme.visual_bell
   },
-  tab_bar_at_bottom = true
+  tab_bar_at_bottom = true,
+  use_fancy_tab_bar = false
 }

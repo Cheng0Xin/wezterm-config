@@ -17,7 +17,7 @@ config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
   left = 4,
   right = 0,
-  top = 0,
+  top = 10,
   bottom = 0,
 }
 config.enable_scroll_bar = false
@@ -34,6 +34,7 @@ local my_color = require 'tabtheme'
 config.window_frame = my_color.window_frame
 config.colors = my_color.colors
 config.tab_bar_at_bottom = my_color.tab_bar_at_bottom
+config.use_fancy_tab_bar = my_color.use_fancy_tab_bar
 
 -- Keybinding
 local my_keybinding = require 'keybinding'
