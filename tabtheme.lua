@@ -223,7 +223,7 @@ wezterm.on("update-right-status", function(window, pane)
       cwd = cwd_uri:sub(slash)
 
       table.insert(cells, cwd);
-      table.insert(cells, hostname);
+      -- table.insert(cells, hostname);
     end
   end
 
