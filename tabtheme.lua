@@ -222,7 +222,7 @@ wezterm.on("update-right-status", function(window, pane)
       -- and extract the cwd from the uri
       cwd = cwd_uri:sub(slash)
 
-      table.insert(cells, cwd);
+      -- table.insert(cells, cwd);
       -- table.insert(cells, hostname);
     end
   end

@@ -54,6 +54,11 @@ function configure_key(config)
     --   mods = 'LEADER',
     --   action = waction.CloseCurrentPane { confirm = false }
     -- },
+    -- {
+    --   key = 'd',
+    --   mods = 'LEADER',
+    --   action = wezterm.MuxDomain.detach()
+    -- },
     -- Size adjust
     {
       key = 'e',
