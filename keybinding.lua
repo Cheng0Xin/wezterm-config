@@ -83,6 +83,17 @@ function configure_key(config)
 			mods = "LEADER|CTRL",
 			action = waction.SendKey({ key = "Home" }),
 		},
+		-- Move tab
+		{
+			key = "H",
+			mods = "CTRL|SHIFT",
+			action = waction.ActivateTabRelative(-1),
+		},
+		{
+			key = "L",
+			mods = "CTRL|SHIFT",
+			action = waction.ActivateTabRelative(1),
+		},
 	}
 
 	-- Activate tabs
