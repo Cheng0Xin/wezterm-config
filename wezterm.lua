@@ -24,10 +24,11 @@ config.enable_scroll_bar = false
 
 -- Font
 config.font = wezterm.font_with_fallback({
+	"FantasqueSansM Nerd Font Propo",
 	"DejaVuSansMono Nerd Font Mono",
 	"BlexMono Nerd Font Propo",
 })
-config.font_size = 18
+config.font_size = 20
 
 -- Tab Theme
 local my_color = require("tabtheme")
