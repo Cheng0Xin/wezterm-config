@@ -24,9 +24,12 @@ config.enable_scroll_bar = false
 
 -- Font
 config.font = wezterm.font_with_fallback({
+	"CodeNewRoman Nerd Font Propo",
+	"ShureTechMono Nerd Font Propo",
+	"Symbols Nerd Font Mono",
+	"BlexMono Nerd Font Propo",
 	"FantasqueSansM Nerd Font Propo",
 	"DejaVuSansMono Nerd Font Mono",
-	"BlexMono Nerd Font Propo",
 })
 config.font_size = 20
 
