@@ -9,6 +9,10 @@ end
 -- Colorscheme
 local my_colorscheme = require("colorscheme")
 config.color_scheme = my_colorscheme.color_scheme
+-- config.window_background_image = my_colorscheme.window_background_image
+-- config.window_background_image_hsb = my_colorscheme.window_background_image_hsb
+config.text_background_opacity = my_colorscheme.text_background_opacity
+config.window_background_opacity = my_colorscheme.window_background_opacity
 
 -- For macos: Native fullscreen
 config.native_macos_fullscreen_mode = true
@@ -25,11 +29,10 @@ config.enable_scroll_bar = false
 -- Font
 config.font = wezterm.font_with_fallback({
 	"CodeNewRoman Nerd Font Propo",
-	"ShureTechMono Nerd Font Propo",
-	"Symbols Nerd Font Mono",
-	"BlexMono Nerd Font Propo",
-	"FantasqueSansM Nerd Font Propo",
 	"DejaVuSansMono Nerd Font Mono",
+	"FantasqueSansM Nerd Font Propo",
+	"ShureTechMono Nerd Font Propo",
+	"BlexMono Nerd Font Propo",
 })
 config.font_size = 20
 
