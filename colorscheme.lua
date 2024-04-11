@@ -2,11 +2,14 @@ local wezterm = require("wezterm")
 
 local function scheme_for_appearance(appearance)
 	if appearance:find("Dark") then
-		return "Catppuccin Mocha"
+		-- return "Catppuccin Mocha"
 		-- return "Dawn (terminal.sexy)"
+		-- return "darkmoss (base16)"
+		return "LiquidCarbonTransparentInverse"
 	else
 		return "Catppuccin Latte"
 		-- return "Unikitty Light (base16)"
+		-- return "Londontube (light) (terminal.sexy)"
 	end
 end
 
@@ -18,7 +21,7 @@ local function background_for_appearance(appearance)
 			hue = 1,
 			saturation = 0.5,
 			opacity = 0.5,
-			text_opacity = 0.8,
+			text_opacity = 0.5,
 		}
 	else
 		return {
@@ -27,7 +30,7 @@ local function background_for_appearance(appearance)
 			hue = 0.5,
 			saturation = 0.5,
 			opacity = 0.8,
-			text_opacity = 0.8,
+			text_opacity = 0.5,
 		}
 	end
 end

@@ -13,6 +13,7 @@ config.color_scheme = my_colorscheme.color_scheme
 -- config.window_background_image_hsb = my_colorscheme.window_background_image_hsb
 config.text_background_opacity = my_colorscheme.text_background_opacity
 config.window_background_opacity = my_colorscheme.window_background_opacity
+config.macos_window_background_blur = 20
 
 -- For macos: Native fullscreen
 config.native_macos_fullscreen_mode = true
