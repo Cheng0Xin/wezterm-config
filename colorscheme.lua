@@ -20,7 +20,7 @@ local function background_for_appearance(appearance)
 			brightness = 0.2,
 			hue = 1,
 			saturation = 0.5,
-			opacity = 0.5,
+			opacity = 0.85,
 			text_opacity = 0.5,
 		}
 	else
