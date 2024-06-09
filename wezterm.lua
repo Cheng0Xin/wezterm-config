@@ -3,7 +3,7 @@ local wezterm = require("wezterm")
 local config = {}
 
 if wezterm.config_builder then
-	config = wezterm.config_builder()
+  config = wezterm.config_builder()
 end
 
 -- Colorscheme
@@ -20,20 +20,21 @@ config.native_macos_fullscreen_mode = true
 config.window_decorations = "RESIZE"
 config.hide_tab_bar_if_only_one_tab = true
 config.window_padding = {
-	left = 4,
-	right = 0,
-	top = 10,
-	bottom = 0,
+  left = 4,
+  right = 0,
+  top = 10,
+  bottom = 0,
 }
 config.enable_scroll_bar = false
 
 -- Font
 config.font = wezterm.font_with_fallback({
-	"CodeNewRoman Nerd Font Propo",
-	"DejaVuSansMono Nerd Font Mono",
-	"FantasqueSansM Nerd Font Propo",
-	"ShureTechMono Nerd Font Propo",
-	"BlexMono Nerd Font Propo",
+  "JetBrainsMono Nerd Font Mono",
+  "DejaVuSansMono Nerd Font Mono",
+  "FantasqueSansM Nerd Font Propo",
+  "ShureTechMono Nerd Font Propo",
+  "CodeNewRoman Nerd Font Propo",
+  "BlexMono Nerd Font Propo",
 })
 config.font_size = 20
 
