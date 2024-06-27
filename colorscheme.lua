@@ -21,7 +21,7 @@ local function background_for_appearance(appearance)
 			hue = 1,
 			saturation = 0.5,
 			opacity = 0.85,
-			text_opacity = 0.5,
+			text_opacity = 0.8,
 		}
 	else
 		return {
@@ -30,7 +30,7 @@ local function background_for_appearance(appearance)
 			hue = 0.5,
 			saturation = 0.5,
 			opacity = 0.8,
-			text_opacity = 0.5,
+			text_opacity = 0.8,
 		}
 	end
 end
