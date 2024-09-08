@@ -30,10 +30,11 @@ config.enable_scroll_bar = false
 
 -- Font
 config.font = wezterm.font_with_fallback({
+  "Hack Nerd Font Mono",
   "JetBrainsMono Nerd Font Mono",
   "DejaVuSansMono Nerd Font Mono",
-  "FantasqueSansM Nerd Font Propo",
   "ShureTechMono Nerd Font Propo",
+  "IosevkaTermSlab Nerd Font Mono",
   "CodeNewRoman Nerd Font Propo",
   "BlexMono Nerd Font Propo",
 })
