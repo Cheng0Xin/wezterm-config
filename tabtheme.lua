@@ -8,6 +8,7 @@ local colors = {
 		pink = "#ea76cb",
 		mauve = "#8839ef",
 		red = "#d20f39",
+		cc = "#287494",
 		maroon = "#e64553",
 		peach = "#fe640b",
 		yellow = "#df8e1d",
@@ -36,6 +37,7 @@ local colors = {
 		pink = "#f4b8e4",
 		mauve = "#ca9ee6",
 		red = "#e78284",
+		cc = "#aa4250",
 		maroon = "#ea999c",
 		peach = "#ef9f76",
 		yellow = "#e5c890",
@@ -64,6 +66,7 @@ local colors = {
 		pink = "#f5bde6",
 		mauve = "#c6a0f6",
 		red = "#ed8796",
+		cc = "#aa4250",
 		maroon = "#ee99a0",
 		peach = "#f5a97f",
 		yellow = "#eed49f",
@@ -92,6 +95,7 @@ local colors = {
 		pink = "#f5c2e7",
 		mauve = "#cba6f7",
 		red = "#f38ba8",
+		cc = "#aa4140",
 		maroon = "#eba0ac",
 		peach = "#fab387",
 		yellow = "#f9e2af",
@@ -167,9 +171,9 @@ end
 
 local function scheme_for_tab(appearance)
 	if appearance:find("Dark") then
-		return select(colors, "mocha", "mauve")
+		return select(colors, "mocha", "cc")
 	else
-		return select(colors, "latte", "mauve")
+		return select(colors, "latte", "cc")
 	end
 end
 
