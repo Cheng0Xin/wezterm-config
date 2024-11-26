@@ -94,6 +94,15 @@ function configure_key(config)
 			mods = "CTRL|SHIFT",
 			action = waction.ActivateTabRelative(1),
 		},
+		-- German letter
+		-- Map Option + U + A to ä
+    {key="a", mods="OPT|CTRL", action=wezterm.action{SendString="ä"}},
+    -- Map Option + U + O to ö
+    {key="o", mods="OPT|CTRL", action=wezterm.action{SendString="ö"}},
+    -- Map Option + U + U to ü
+    {key="u", mods="OPT|CTRL", action=wezterm.action{SendString="ü"}},
+    -- Map Option + S to ß
+    {key="s", mods="OPT|CTRL", action=wezterm.action{SendString="ß"}},
 	}
 
 	-- Activate tabs
