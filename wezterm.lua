@@ -30,6 +30,7 @@ config.enable_scroll_bar = false
 
 -- Font
 config.font = wezterm.font_with_fallback({
+  "Maple Mono NF CN",
   "Hack Nerd Font Mono",
   "JetBrainsMono Nerd Font Mono",
   "DejaVuSansMono Nerd Font Mono",
@@ -38,7 +39,7 @@ config.font = wezterm.font_with_fallback({
   "CodeNewRoman Nerd Font Propo",
   "BlexMono Nerd Font Propo",
 })
-config.font_size = 20
+config.font_size = 22
 
 -- Tab Theme
 local my_color = require("tabtheme")
@@ -48,7 +49,34 @@ config.tab_bar_at_bottom = my_color.tab_bar_at_bottom
 config.use_fancy_tab_bar = my_color.use_fancy_tab_bar
 
 -- Keybinding
-local my_keybinding = require("keybinding")
-my_keybinding.configure_key(config)
+-- local my_keybinding = require("keybinding")
+-- my_keybinding.configure_key(config)
+
+function configure_key(config)
+  config.keys = {
+    -- Move tab
+    {
+      key = "H",
+      mods = "CTRL|SHIFT",
+      action = wezterm.action.DisableDefaultAssignment,
+    },
+    {
+      key = "L",
+      mods = "CTRL|SHIFT",
+      action = wezterm.action.DisableDefaultAssignment,
+    },
+    -- German letter
+    -- Map Option + U + A to ä
+    { key = "a", mods = "OPT|CTRL", action = wezterm.action { SendString = "ä" } },
+    -- Map Option + U + O to ö
+    { key = "o", mods = "OPT|CTRL", action = wezterm.action { SendString = "ö" } },
+    -- Map Option + U + U to ü
+    { key = "u", mods = "OPT|CTRL", action = wezterm.action { SendString = "ü" } },
+    -- Map Option + S to ß
+    { key = "s", mods = "OPT|CTRL", action = wezterm.action { SendString = "ß" } },
+  }
+end
+
+configure_key(config)
 
 return config

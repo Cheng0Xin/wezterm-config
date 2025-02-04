@@ -49,17 +49,12 @@ function configure_key(config)
 			mods = "LEADER",
 			action = waction.TogglePaneZoomState,
 		},
-		-- -- Close current pane
-		-- {
-		--   key = 'c',
-		--   mods = 'LEADER',
-		--   action = waction.CloseCurrentPane { confirm = false }
-		-- },
-		-- {
-		--   key = 'd',
-		--   mods = 'LEADER',
-		--   action = wezterm.MuxDomain.detach()
-		-- },
+		-- Close current pane
+		{
+			key = 'c',
+			mods = 'LEADER',
+			action = waction.CloseCurrentPane { confirm = false }
+		},
 		-- Size adjust
 		{
 			key = "e",
@@ -96,13 +91,13 @@ function configure_key(config)
 		},
 		-- German letter
 		-- Map Option + U + A to ä
-    {key="a", mods="OPT|CTRL", action=wezterm.action{SendString="ä"}},
-    -- Map Option + U + O to ö
-    {key="o", mods="OPT|CTRL", action=wezterm.action{SendString="ö"}},
-    -- Map Option + U + U to ü
-    {key="u", mods="OPT|CTRL", action=wezterm.action{SendString="ü"}},
-    -- Map Option + S to ß
-    {key="s", mods="OPT|CTRL", action=wezterm.action{SendString="ß"}},
+		{ key = "a", mods = "OPT|CTRL", action = wezterm.action { SendString = "ä" } },
+		-- Map Option + U + O to ö
+		{ key = "o", mods = "OPT|CTRL", action = wezterm.action { SendString = "ö" } },
+		-- Map Option + U + U to ü
+		{ key = "u", mods = "OPT|CTRL", action = wezterm.action { SendString = "ü" } },
+		-- Map Option + S to ß
+		{ key = "s", mods = "OPT|CTRL", action = wezterm.action { SendString = "ß" } },
 	}
 
 	-- Activate tabs
