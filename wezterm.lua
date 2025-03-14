@@ -31,9 +31,9 @@ config.enable_scroll_bar = false
 -- Font
 config.font = wezterm.font_with_fallback({
   "Maple Mono NF CN",
-  "Symbols Nerd Font",
+  "Symbols Nerd Font Mono",
 })
-config.font_size = 22
+config.font_size = 18
 
 -- Tab Theme
 local my_color = require("tabtheme")
