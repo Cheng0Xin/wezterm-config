@@ -31,13 +31,7 @@ config.enable_scroll_bar = false
 -- Font
 config.font = wezterm.font_with_fallback({
   "Maple Mono NF CN",
-  "Hack Nerd Font Mono",
-  "JetBrainsMono Nerd Font Mono",
-  "DejaVuSansMono Nerd Font Mono",
-  "ShureTechMono Nerd Font Propo",
-  "IosevkaTermSlab Nerd Font Mono",
-  "CodeNewRoman Nerd Font Propo",
-  "BlexMono Nerd Font Propo",
+  "Symbols Nerd Font",
 })
 config.font_size = 22
 
