@@ -30,16 +30,16 @@ config.enable_scroll_bar = false
 
 -- Font
 config.font = wezterm.font_with_fallback({
-  "Maple Mono NF CN",
-  "Hack Nerd Font Mono",
+  "Maple Mono Normal NF CN",
   "JetBrainsMono Nerd Font Mono",
+  "Hack Nerd Font Mono",
   "DejaVuSansMono Nerd Font Mono",
   "ShureTechMono Nerd Font Propo",
   "IosevkaTermSlab Nerd Font Mono",
   "CodeNewRoman Nerd Font Propo",
   "BlexMono Nerd Font Propo",
 })
-config.font_size = 22
+config.font_size = 16
 
 -- Tab Theme
 local my_color = require("tabtheme")
@@ -53,12 +53,12 @@ local my_keybinding = require("keybinding")
 my_keybinding.configure_key(config)
 
 -- Unix multiplex
-config.unix_domains = {
-  {
-    name = 'unix',
-  },
-}
+-- config.unix_domains = {
+--   {
+--     name = 'unix',
+--   },
+-- }
 
-config.default_gui_startup_args = { 'connect', 'unix' }
+-- config.default_gui_startup_args = { 'connect', 'unix' }
 
 return config
