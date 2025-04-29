@@ -30,7 +30,9 @@ config.enable_scroll_bar = false
 
 -- Font
 config.font = wezterm.font_with_fallback({
-  "Maple Mono NF CN",
+  "CaskaydiaMono Nerd Font Propo",
+  -- "Maple Mono NF CN",
+  "LXGW WenKai Mono",
   "Symbols Nerd Font Mono",
 })
 config.font_size = 18
@@ -53,6 +55,6 @@ config.unix_domains = {
   },
 }
 
-config.default_gui_startup_args = { 'connect', 'unix' }
+-- config.default_gui_startup_args = { 'connect', 'unix' }
 
 return config
